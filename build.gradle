@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '2.6.1'
+        springBootVersion = '2.6.2'
     }
 
     repositories {
@@ -19,21 +19,22 @@ apply plugin: 'io.spring.dependency-management'
 
 group 'com.gunho.gradle1'
 version '1.0-SNAPSHOT'
-sourceCompatibility = '11'
 
-repositories {
+repositories
+{
     mavenCentral()
 }
 
-dependencies {
-//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
-//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
-
-    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.1'
-    implementation 'junit:junit:4.13.1'
-    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.1'
+dependencies
+{
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.2'
+    implementation 'junit:junit:4.13.2'
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.2'
 }
 
-test {
+test
+{
     useJUnitPlatform()
 }
