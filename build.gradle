@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        springBootVersion = '2.6.2'
+        springBootVersion = '2.6.4'
     }
 
     repositories {
@@ -27,16 +27,15 @@ repositories
 
 dependencies
 {
-    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.2'
+    implementation 'org.springframework.boot:spring-boot-starter-web:2.6.5'
     implementation 'junit:junit:4.13.2'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'com.h2database:h2'
-    implementation 'org.springframework.boot:spring-boot-starter-jdbc:2.6.2'
+    implementation 'org.springframework.boot:spring-boot-starter-jdbc:2.6.5'
 
-    implementation 'org.springframework.boot:spring-boot-starter-mustache:2.6.2'
-
-    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.2'
-    testImplementation 'org.assertj:assertj-core:3.21.0'
+    implementation 'org.springframework.boot:spring-boot-starter-mustache:2.6.5'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test:2.6.5'
+    testImplementation 'org.assertj:assertj-core:3.22.0'
 
     //gradle 버전 5 이상부터는 아래와 같이 의존성을 추가해야함.
     compileOnly 'org.projectlombok:lombok'
